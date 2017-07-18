@@ -1,0 +1,452 @@
+Started GET "/" for 101.165.224.9 at 2017-07-17 12:27:01 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 302ms (Views: 8.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIdeas (20170717123538)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "picture" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170717123538"]]
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-17 12:37:29.117780"], ["updated_at", "2017-07-17 12:37:29.117780"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 101.165.224.9 at 2017-07-17 12:38:00 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 27ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 101.165.224.9 at 2017-07-17 12:38:57 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:39:05 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 966ms (Views: 956.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ideas/new" for 101.165.224.9 at 2017-07-17 12:39:13 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (42.6ms)
+  Rendered ideas/new.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 78ms (Views: 65.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 101.165.224.9 at 2017-07-17 12:42:23 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:42:30 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:42:33 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 101.165.224.9 at 2017-07-17 12:42:50 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 24ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:43:03 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 273ms (Views: 264.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:44:32 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:53:03 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:53:06 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:53:42 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 12:54:21 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 13:00:24 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 122ms (Views: 119.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-17 13:01:05 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 205ms (Views: 202.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 101.165.224.9 at 2017-07-18 13:08:25 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 19ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:08:33 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 304ms (Views: 290.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 101.165.224.9 at 2017-07-18 13:08:51 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:10:33 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 267ms (Views: 248.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas/new" for 101.165.224.9 at 2017-07-18 13:10:36 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (22.0ms)
+  Rendered ideas/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 59ms (Views: 46.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/ideas" for 101.165.224.9 at 2017-07-18 13:10:51 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XOQhgXRxYJPLqRmRrdwShTh6O1lBWSlKLOFFB0mMg5Q2iPmDNlTPwLdnxkKefkwFjytIIfvn+uVhn+mkTqFcig==", "idea"=>{"name"=>"TEST", "description"=>"TEST", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f2318a71858 @tempfile=#<Tempfile:/tmp/RackMultipart20170718-9150-1dv3jx6.jpg>, @original_filename="lara.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"lara.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Idea"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "ideas" ("name", "description", "picture", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "TEST"], ["description", "TEST"], ["picture", "lara.jpg"], ["created_at", "2017-07-18 13:10:51.453232"], ["updated_at", "2017-07-18 13:10:51.453232"]]
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://railsgirls-laraw.c9users.io/ideas/1
+Completed 302 Found in 31ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/ideas/1" for 101.165.224.9 at 2017-07-18 13:10:51 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:10:55 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas/1" for 101.165.224.9 at 2017-07-18 13:10:58 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:11:00 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 251ms (Views: 248.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:12:25 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `picture' for nil:NilClass):
+    17:       <tr>
+    18:         <td><%= idea.name %></td>
+    19:         <td><%= idea.description %></td>
+    20:         <td><%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %></td>
+    21:         <td><%= link_to 'Show', idea %></td>
+    22:         <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
+    23:         <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/ideas/index.html.erb:20:in `block in _app_views_ideas_index_html_erb__1650157318624578877_69894370059900'
+app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb__1650157318624578877_69894370059900'
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:13:06 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas/1" for 101.165.224.9 at 2017-07-18 13:13:10 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  Rendered ideas/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:13:15 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 101.165.224.9 at 2017-07-18 13:15:12 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:15:13 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 310ms (Views: 294.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:17:09 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.6ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:17:31 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ideas/1/edit" for 101.165.224.9 at 2017-07-18 13:17:49 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.7ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (56.6ms)
+  Rendered ideas/edit.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 115ms (Views: 96.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:17:52 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas/1/edit" for 101.165.224.9 at 2017-07-18 13:17:54 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.9ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (5.1ms)
+  Rendered ideas/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 101.165.224.9 at 2017-07-18 13:19:22 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ideas" for 101.165.224.9 at 2017-07-18 13:19:23 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 264ms (Views: 247.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/ideas/1/edit" for 101.165.224.9 at 2017-07-18 13:19:25 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.6ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (31.8ms)
+  Rendered ideas/edit.html.erb within layouts/application (34.1ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `picture' for :idea:Symbol):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :picture %>
+    26:     <%= image_tag(:idea.picture_url, :width => 100, :height => 100) if :idea.picture.present? %>
+    27:     <%= form.file_field :picture, id: :idea_picture %>
+    28:   </div>
+    29: 
+  
+app/views/ideas/_form.html.erb:26:in `block in _app_views_ideas__form_html_erb___3998932564246382487_70267510632660'
+app/views/ideas/_form.html.erb:1:in `_app_views_ideas__form_html_erb___3998932564246382487_70267510632660'
+app/views/ideas/edit.html.erb:3:in `_app_views_ideas_edit_html_erb__4267306137315569206_70267581453780'
+Started GET "/ideas/1/edit" for 101.165.224.9 at 2017-07-18 13:20:08 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (9.0ms)
+  Rendered ideas/edit.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "idea_picture_url" is not present in the asset pipeline.):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :picture %>
+    26:     <%= image_tag(:idea_picture_url, :width => 100, :height => 100) if :idea_picture.present? %>
+    27:     <%= form.file_field :picture, id: :idea_picture %>
+    28:   </div>
+    29: 
+  
+app/views/ideas/_form.html.erb:26:in `block in _app_views_ideas__form_html_erb___3998932564246382487_70267578247040'
+app/views/ideas/_form.html.erb:1:in `_app_views_ideas__form_html_erb___3998932564246382487_70267578247040'
+app/views/ideas/edit.html.erb:3:in `_app_views_ideas_edit_html_erb__4267306137315569206_70267578358060'
+Started GET "/ideas/1/edit" for 101.165.224.9 at 2017-07-18 13:20:41 +0000
+Cannot render console from 101.165.224.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (8.4ms)
+  Rendered ideas/edit.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "idea_picture" is not present in the asset pipeline.):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :picture %>
+    26:     <%= image_tag(:idea_picture, :width => 100, :height => 100) if :idea_picture.present? %>
+    27:     <%= form.file_field :picture, id: :idea_picture %>
+    28:   </div>
+    29: 
+  
+app/views/ideas/_form.html.erb:26:in `block in _app_views_ideas__form_html_erb___3998932564246382487_70267611220860'
+app/views/ideas/_form.html.erb:1:in `_app_views_ideas__form_html_erb___3998932564246382487_70267611220860'
+app/views/ideas/edit.html.erb:3:in `_app_views_ideas_edit_html_erb__4267306137315569206_70267611191020'
